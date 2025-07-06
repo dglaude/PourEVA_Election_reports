@@ -1,0 +1,1022 @@
+Élections d’octobre 2024 - Rapport du Collège d’experts
+
+Rapport du Collège d’experts chargés du
+contrôle des systèmes électroniques de
+dépouillement et de collecte des résultats
+
+Élections communales et provinciales du
+13 octobre 2024
+
+Namur, le 23 octobre 2024
+
+1 Le Collège
+
+1.1 Composition du Collège
+
+Conformément au Code de la démocratie locale et de la décentralisation, du 22
+avril 2004 et au Code de la démocratie locale et de la décentralisation du 11
+décembre 2023 qui s’applique à la Communauté germanophone :
+L4141-2 §1 : « Lors de l'élection des membres des conseils provinciaux et
+communaux et des conseils de secteur, le Parlement wallon et le Parlement de
+la Communauté germanophone peuvent désigner chacun un expert effectif et
+un expert suppléant.
+Les personnes désignées en vertu de l'alinéa 1er forment le Collège
+d'experts » :
+- Expert désigné par le Parlement Wallon : M. Christophe DE SCHRYVER
+- Experts désignés par le Parlement de la Communauté germanophone :
+M. Daniel BRANDT et Mme Susi OSTLENDER
+
+1.2 La mission
+
+Le Collège d'experts contrôle, lors des élections, la fiabilité du logiciel visé à l'article
+L4141-1, §1er, alinéa 1er, ainsi que de tout logiciel utilisé pour aider au dépouillement
+du vote en exécution de l'article L4144-8, §2.
+Art. L4141-2 - §2 : « Ces experts contrôlent lors des élections l'utilisation et le bon
+fonctionnement de l'ensemble de systèmes de vote et de dépouillement automatisés
+ainsi que les procédures concernant la confection, la distribution et l'utilisation des
+systèmes de vote, logiciels et supports d'information électroniques. Les experts
+reçoivent du ministère de la Communauté germanophone le matériel ainsi que
+l'ensemble des données, renseignements et informations utiles pour exercer un
+contrôle sur les systèmes de vote et de dépouillement automatisés.
+Ils peuvent notamment vérifier la fiabilité des logiciels des systèmes de vote
+automatisés, la transcription exacte par l'urne électronique des suffrages exprimés
+ainsi que leur totalisation et la lecture optique des votes exprimés.
+Ils effectuent ce contrôle à partir du quarantième jour précédant l'élection, le jour de
+l'élection et après celle-ci, jusqu'au dépôt du rapport visé au § 3. »
+
+1.3 Le rapport
+
+Art. L4141-2 §3. « Au plus tard dix jours après la clôture des scrutins et en tout état de
+cause avant la validation des élections, les experts remettent un rapport au Parlement
+et au Gouvernement. Ledit rapport peut notamment comprendre les recommandations
+relatives au matériel et aux logiciels utilisés. »
+
+1.4 Secret
+
+Art. L4141-2 §4 « Le Collège d’ expert est tenus au secret. Toute violation de ce secret
+sera sanctionnée conformément à l’article 458 du Code pénal. »
+
+2 Description des systèmes
+
+Trois systèmes doivent être considérés par rapport au contrôle du Collège :
+1. Le système MARTINE, développé par la société Civadis, chargé de
+collecter les données de base (listes, candidats, personnes impliquées,
+etc.) pour l'élection, de collecter les résultats des bureaux de vote ou de
+dépouillement, du calcul et de la diffusion des résultats des élections ;
+2. Le système de vote électronique développé par la société SmartMatic et
+utilisé dans 9 communes de la Communauté germanophone ;
+3. Le système de comptage numérique des bulletins papier PATSY
+développé par la société Civadis qui aide au dépouillement du vote
+papier.
+Ces systèmes sont pour l’essentiel identiques à ceux utilisés lors des élections
+simultanées du 9 juin 2024 pour le Parlement européen, la Chambre des
+représentants et les Parlements de région et communauté.
+
+2.1 Description fonctionnelle globale
+
+Il est a noté que le Collège n’a été informé d’aucun changement des logiciels
+entre les élections de juin 2024 et celles d’octobre 2024.
+Avant les élections, le système MARTINE sert entre autres à récolter les
+données des candidats pour confectionner les listes. Les fichiers informatiques
+générés par cette opération sont intégrés à l’environnement de SmartMatic qui
+sert à la production des clés USB utilisées le jour des élections.
+Le jour des élections, à la clôture des opérations dans le bureau de vote, la
+machine du président génère un fichier résultat .x7s par élection, qui contient
+la totalisation des votes émis dans ce bureau.
+Au bureau principal, le système MARTINE injecte ce fichier résultat dans un
+serveur central qui effectue la totalisation de tous les bureaux par commune et
+par canton, calcule les résultats complets de l’élection et les diffuse.
+Pour le vote traditionnel, dans le bureau de canton, le système MARTINE sert à
+l’encodage des résultats des bureaux de dépouillement. Ces résultats
+proviennent soit d’un bureau de dépouillement traditionnel soit d’un bureau de
+dépouillement avec le système PATSY. Dans ce dernier cas, les résultats sont
+transmis au système MARTINE via une clé USB.
+
+2.2 SmartMatic
+
+2.2.1 Description fonctionnelle
+
+La version de 2018 est celle utilisée pour les élections d’octobre 2024.
+
+2.2.2 L’urne et la machine du président
+
+Dans la version de 2018, le PC du président du bureau de vote s’apparente à
+un PC à écran tactile et à lecteur de carte intégré, connecté au hub USB de
+l’urne qui lui fournit son alimentation.
+
+2.2.3 La machine à voter
+
+La machine à voter SmartMatic est un ordinateur basé sur des composants
+standards placés dans un boîtier particulier muni d’un écran tactile, d’un lecteur
+de carte à puce et d’une imprimante intégrée. L’interrupteur, la prise pour le
+raccordement au réseau électrique, les connecteurs USB et le connecteur pour
+l’alarme sont situés sur la face arrière. Les seuls composants de l’ordinateur
+auxquels l’électeur a accès sont le lecteur de carte à puce, l’écran tactile et
+l’imprimante qui sont sur la face avant. Une machine à voter n’a ni clavier ni
+disque dur.
+
+2.2.4 La procédure électorale avec preuve papier
+
+2.2.4.0 L’ouverture du bureau de vote avec preuve papier
+
+La première opération consiste à démarrer la machine du président à l’aide des
+deux clés USB identiques qui lui ont été fournies en même temps que ses mots
+de passe.
+Le président et son bureau vérifient le bon raccordement des différents
+éléments et démarrent la machine du président. Ensuite, vient une phase de
+diagnostic de la machine du président et des périphériques raccordés (clés
+USB, urne, valideuse de carte à puce, clavier, souris…).
+La machine du président demande de démarrer les machines à voter. Une des
+clés USB est nécessaire pour démarrer les machines à voter. Lorsque toutes
+les machines à voter sont prêtes, les clés USB sont réintroduites dans la
+machine du président.
+
+2.2.4.1 Le déroulement du vote
+
+Le vote est réalisé sur la machine à voter qui se trouve dans l’isoloir. La machine
+à voter imprime une preuve papier reprenant les votes sous forme lisible ainsi
+que leurs représentations sous forme de QR-code.
+Chaque électeur reçoit une carte à puce initialisée pour lui permettre de voter.
+Il l’emporte dans l’isoloir et l’introduit dans la machine à voter. Toute carte mal
+initialisée, non initialisée ou déjà utilisée est refusée. Cette carte ne sert qu’à
+démarrer l’opération de vote et ne contient aucune autre information ; elle ne
+sert pas à enregistrer le vote.
+L’écran affiche des indications pendant toute l’opération de vote. Premièrement
+il est demandé à l’électeur de choisir la langue de l’interface. Il peut ensuite
+exprimer ses votes (vote blanc, vote en tête de liste, un ou plusieurs candidats
+de la même liste) pour chaque élection que le système lui présente. A chaque
+étape, il lui est demandé de confirmer avant de passer à l’étape suivante.
+Lorsque l’électeur a confirmé son vote pour une élection sur l’écran tactile, le
+vote est définitif ; l’électeur ne peut plus le changer. Tant qu’il n’est pas
+confirmé, l’électeur peut annuler son vote et recommencer.
+Après confirmation du vote, la machine à voter imprime le vote sous forme
+textuelle ainsi que sous la forme d’un QR-code sur un bulletin « preuve papier
+» et invite l’électeur à retirer la carte à puce. Dans un isoloir prévu à cet effet,
+l’électeur peut scanner le QR-code de sa preuve papier au moyen d’un scanner
+à main. Le contenu du QR-code est alors affiché à l’écran et l’électeur peut
+vérifier son vote.
+L’électeur se dirige ensuite vers l’urne où il lui est demandé de placer le QRcode
+de son bulletin de vote au-dessus du scanner de l’urne. Après
+confirmation sonore et visuelle que le QR-code a bien été lu et enregistré par
+l’ordinateur du président, la fente de l’urne s’ouvre et l’électeur introduit son
+bulletin de vote dans l’urne. Il remet ensuite la carte à puce au président ou à
+un assesseur.
+
+2.2.4.2 La clôture du bureau de vote
+
+A l’issue du scrutin, le bureau de vote est clôturé et un rapport reprenant les
+chiffres-clés est imprimé. Ce rapport est signé de manière manuscrite par les
+membres du bureau de vote et joint à leur PV.
+L’urne est ouverte et les bulletins « preuves papiers » sont transférés dans une
+enveloppe. Cette enveloppe contenant les bulletins de vote est ensuite scellée.
+Le procès-verbal, une des deux clés USB du bureau et l’enveloppe contenant
+les bulletins de vote sont emmenés au bureau principal. L’autre clé USB du
+bureau est emmené au bureau communal.
+
+2.2.5 Éléments techniques du système SmartMatic dans les
+bureaux de vote
+
+Le système SmartMatic utilisé dans les bureaux de vote s’exécute à partir des
+supports mémoires de type clés USB. Ces clés USB contiennent tous les
+programmes et toutes les données nécessaires au fonctionnement des
+différents ordinateurs (machine du président et machine de vote) et
+périphériques (urne et scanner à main présent dans un isoloir).
+Les clés USB sont produites de manière centralisée et sont strictement
+identiques pour tous les bureaux de vote. Elles ne deviennent spécifiques à un
+bureau de vote qu’après le premier démarrage et l’introduction du nom du
+bureau et du mot de passe correspondant.
+À partir de ce moment, les clés ne peuvent plus être utilisées que pour ce
+bureau de vote spécifique.
+La clé contient par ailleurs deux zones de stockage, appelées « partitions » en
+jargon informatique. L’une est propre et spécifique au programme qui tourne
+dans le bureau de vote le jour des élections. Dans ce rapport, elle est identifiée
+en tant que « partition SmartMatic ». L’autre sert au stockage des données et
+des résultats du bureau de vote qui doivent être transférés à l’environnement
+MARTINE pour la totalisation et le calcul des résultats. Dans ce rapport, elle est
+identifiée en tant que « partition MARTINE ».
+
+2.2.5.0 Partition SmartMatic
+
+À chaque bulletin de vote scanné par l'urne, une copie du vote exprimé est
+stockée dans un fichier signé et crypté avec extension .vt dans le dossier
+«/SAESLocal/SAES/Votes» de la clé. À la fin de la journée, ce dossier contient
+autant de fichiers .vt qu'il y a eu de bulletins scannés.
+Au moment de la clôture des opérations, un fichier « résultat » avec extension
+.x7s est généré pour chaque élection. Ces fichiers sont numériquement signés
+et cryptés de manière à ne pouvoir être décryptés que par l'application
+MARTINE chargée de les totaliser.
+
+2.2.5.1 Partition MARTINE
+
+À la clôture du bureau de vote, les fichiers .vt et .x7s ainsi que quelques autres
+fichiers de contrôle, sont copiés depuis la partition SmartMatic vers la partition
+MARTINE.
+Parmi les fichiers de contrôle se trouve le fichier PDF qui sert à l’impression
+dans le bureau de vote du «Rapport des chiffres-clés».
+
+2.3 PATSY
+
+2.3.1 Description
+
+Le système PATSY (« Paper ballot Totalization System ») est destiné à faciliter
+le dépouillement des votes papier tout en minimisant le risque d’erreurs en
+procédant à un double encodage en parallèle.
+Les résultats sont mémorisés sur une clé USB qui est lue automatiquement au
+bureau principal de canton, ce qui évite un encodage manuel fastidieux des
+résultats des bureaux de dépouillement.
+
+2.3.2 Fonctionnement d’un bureau de dépouillement PATSY
+
+Les membres du bureau de dépouillement comptent tout d’abord les bulletins
+présents dans chaque urne.
+Ceux-ci sont ensuite rassemblés, mélangés et dépliés pour être répartis en 4
+tas : les « valables », les « blancs », les « nuls » et les « suspects ». Les «
+suspects » sont isolés pour être traités à la fin.
+Le bureau de dépouillement est équipé de 2 ordinateurs connectés entre eux,
+qui permettent un double encodage. Les bulletins « valables » sont encodés sur
+le PC1 : un membre dicte le contenu du bulletin à un second membre qui
+procède à l’encodage. L’encodage est validé et le bulletin est déposé côté recto
+sur la table.
+Tous ces bulletins sont ensuite récupérés et encodés dans le même ordre sur
+le PC2.
+Les éventuelles différences sont signalées et font l’objet d’une correction en
+présence des membres du bureau.
+Les bulletins « suspects » sont analysés par les membres du bureau et encodés
+sur les deux PC après accord du bureau.
+Le PV final est alors généré en format PDF et les résultats sont stockés sur les
+clés USB pour être transmis par le président au bureau principal de canton.
+Le logiciel PATSY est doté d’une série de fonctions qui permettent de gérer la
+plupart des situations : réouverture du bureau, redémarrage, remise à zéro des
+compteurs.
+
+2.3.3 Hardware
+
+Le logiciel PATSY peut être utilisé soit sur du matériel acheté ou loué à la
+société Civadis, développeur de l’application, soit sur du matériel appartenant
+à la commune, à condition que ce matériel réponde à certaines spécifications
+techniques basiques.
+
+2.3.4 Software
+
+Le Collège a reçu en juin 2024 une copie du code source du logiciel à toutes
+fins utiles.
+
+2.4 MARTINE
+
+MARTINE est une plateforme en ligne multitâches, permettant, entre autres, la
+gestion de la structure de l’élection, du nom et du nombre des bureaux
+principaux, du nombre de bureaux de vote par commune et de leur adresse,
+des contacts, des actes de dépôts, des PV d’arrêts, des PV de dépouillement
+et des résultats de vote.
+Les acteurs concernés par MARTINE sont :
+- Les bureaux principaux ;
+- Les candidats ;
+- Le pouvoir organisateur.
+
+2.4.1 Infrastructure
+
+La solution repose sur un environnement virtualisé basé sur une distribution
+Linux Centos/Redhat et VMware ESXi hypervisor. L’application se répartit au
+minimum sur 3 serveurs. Tous les modules sont déployés de manière
+redondante selon le principe du mode de fonctionnement « actif/actif ». Les
+bases de données et le filesystem serveur fonctionnent en mode « actif/passif ».
+Au minimum deux lignes redondantes sont disponibles, une en production,
+l’autre en alerte. Les bases de données principales et de sauvegarde se
+synchronisent en continu. Les infrastructures sont équipées d’alimentations
+électriques, de connexions Internet, de switches, firewalls… redondants.
+
+2.4.2 Logiciels
+
+Le système MARTINE est construit à partir d’un ensemble de briques logicielles
+que l'on peut diviser en trois catégories :
+- « Web modules », conçus pour les utilisateurs ;
+- « Back end modules », pour gérer en arrière-plan les données et les
+résultats des candidats ;
+- « Support modules » à usage interne pour des tâches spécifiques.
+
+2.4.2.0 Les modules
+
+MARTINE propose les modules décrits ci-dessous.
+
+2.4.2.0.1 MA1X (Web)
+
+MA1X offre les outils pour préparer les listes électorales.
+
+2.4.2.0.2 MA2X (web)
+
+MA2X est utilisée par l’équipe du bureau principal pour collecter les votes.
+Pour les bureaux de votes « papiers » ou le dépouillement se fait manuellement,
+les données sont encodées manuellement dans le système.
+Pour les bureaux de vote “papiers” où le dépouillement se fait à l’aide du
+système PATSY les données de vote sont obtenues via l’introduction de la clé
+USB PATSY. Les fichiers lus (fichiers .x7s et .csv) sont transférés par MA2X et
+enregistrés pour des traitements ultérieurs.
+Pour les bureaux de vote électronique, les données de vote sont obtenues via
+l’introduction de la clé USB SmartMatic. Les fichiers lus (fichiers .x7s en .vt)
+sont transférés par MA2X et enregistrés pour des traitements ultérieurs.
+MA2X s'occupe également de la production des résultats partiels après la lecture de
+10 bureaux de vote par bureau communal ou principal. En cas de moins de 10 bureaux
+de vote, des résultats partiels sont produit après la lecture complète de tous les
+bureaux de vote par bureau communal ou principal. Les résultats définitifs par bureau
+communal ou principal sont produits après la signature du protocole.
+
+2.4.2.0.3 MA3X (web)
+
+MA3X contient les informations relatives aux bureaux de vote et aux bureaux
+de dépouillement : les adresses et personnes de contacts, le président et le
+secrétaire du bureau, etc.
+MA3X est également utilisé par MA1B (voir ci-dessous) et MA2X pour autoriser
+l’accès des utilisateurs authentifiés.
+
+2.4.2.0.4 MA1L
+
+MA1L sert à la préparation des actes de dépôt des candidats.
+
+2.4.2.0.5 MA1B (Web)
+
+MA1B va réceptionner les actes de candidatures avant d’aboutir à un procèsverbal
+d’arrêt définitif avec le détail des listes reçues de MA1X. MA1B
+enregistre aussi les listes finalisées dans le backend MARTINE.
+
+2.4.2.0.6 MA3S
+
+MA3S supervise les opérations effectuées dans MA3X par les communes et les
+bureaux principaux. Les modules « Collect » et « Calcul » permettent de suivre
+l’arrivée des fichiers sur les serveurs centraux du pouvoir organisateur. Le
+module « Cockpit » permet de suivre toutes les opérations effectuées par
+l’ensemble des modules.
+
+2.4.2.0.7 DECRYPT (Support)
+
+DECRYPT offre une interface de service à MA2X afin qu’il puisse lire et
+renvoyer des informations à partir de fichiers de résultats de vote chiffrés. Il est
+défini en tant que module distinct uniquement pour la sécurité. Il n'est pas
+accessible à partir d'Internet et peut donc être séparé davantage au niveau du
+réseau pour optimiser le contrôle d'accès. Le déchiffrement nécessite la clé de
+déchiffrement privée pour les fichiers lus à partir de clés USB.
+
+2.4.2.0.8 MA1-COLLECT (Backend)
+
+MA1-COLLECT est le point d'entrée principal pour les fichiers générés, avec
+interface de surveillance. Il effectue une validation simple des fichiers reçus et
+les stocke pour un traitement ultérieur par MA2-CALCULATE. MA1-COLLECT
+est également utilisé par MA2X pour lire les données de résultat nécessaires à
+la production de ses PV finaux.
+
+2.4.2.1 Accès aux modules
+
+L’accès aux modules destinés aux communes, aux bureaux principaux et aux
+formations politiques est conditionné par l’introduction d’une carte d’identité
+électronique avec le code pin associé. Ces modules sont : MA3X, MA1L, MA1B,
+MA2X.
+
+Les utilisateurs des modules MA3X ne sont pas connus avant l’élection par les
+pouvoirs organisateurs. Ils sont désignés en interne par les communes (MA3C)
+ou par les présidents des bureaux principaux (MA3B). Un système de SPOC
+(« single point of contact ») a été mis au point pour permettre l’association d’un
+bureau avec ses utilisateurs. MARTINE associe à chaque bureau principal un
+login/password qui est transmis aux bureaux concernés par la voie officielle
+mise en place par le pouvoir organisateur.
+
+La personne qui dispose du login/password du bureau peut s’enregistrer dans
+MA3X en introduisant sa carte d’identité et son code pin. Cette personne
+devient alors le SPOC principal pour ce bureau et pourra avoir accès par la
+suite à ce module en utilisant uniquement sa carte d’identité. L’utilisation du
+login/password n’est nécessaire que pour la première connexion.
+
+Un SPOC peut désigner un SPOC backup dans son bureau.
+
+3 Contrôles et constatations
+
+3.1 Contrôles effectués avant le jour des élections
+
+3.1.1 Contrôles du système SmartMatic
+Il est à noter que le Collège n’a été informé d’aucun changement des logiciels
+entre les élections de juin 2024 et celles d’octobre 2024. L’analyse de juin 2024
+est donc d’application.
+
+3.1.1.0 Remise du code source et compilation de référence
+
+Une réunion de remise du code source et de compilation de référence a été
+organisée le 7 décembre 2023 au SPF Intérieur en présence de l’organisme
+d’avis, de représentants de la firme SmartMatic, membres du SPF Intérieur et
+de membres du Collège d’Experts permanent.
+L’application a ensuite été compilée sur un PC vierge. La procédure suivie fut
+la suivante :
+- Téléchargement du système d’exploitation Linux Ubuntu 14.04 LTS;
+- Démarrage du PC de compilation sur une clé USB contenant un système
+d’exploitation Linux Ubuntu 14.04 LTS ;
+- Installation d’Ubuntu 14.04 LTS sur le PC de compilation ;
+- Redémarrage du PC de compilation sous Ubuntu et copie du code
+source fourni par SmartMatic ;
+- Compilation et génération de l’image disque de l’environnement ECM
+(machine de préparation) ;
+- Compilation et génération de l’image disque de la machine président
+(PM) et de la machine à voter (VM).
+À la fin de la compilation, une copie du code source et des images disques
+générées ont été copiées sur différentes clés USB et remise sous enveloppe
+scellée aux représentants de l’organisme d’avis, du Collège permanent et de
+SmartMatic.
+Deux copies ont également été mises sous enveloppes scellées séparées pour
+mise au coffre au SPF Intérieur avec le PC de compilation.
+
+3.1.1.1 Rapport de l’organisme d’avis
+
+La société PwC a été mandatée pour la vérification de l’adéquation des
+applications du système SmartMatic (convention PwC-SmartMatic du 27
+novembre 2023).
+
+À l’occasion d’une réunion organisée le 17 avril 2024, l’organisme d’avis PWC
+a présenté son avis concernant le système de vote SmartMatic.
+
+L’analyse s’est focalisée sur l’application de préparation du système de vote, le
+système du président de bureau, l’urne, les machines à voter et l’application de
+recomptage. PwC a réalisé de multiples contrôles automatisés et a conduit des
+entrevues avec l’équipe en charge du développement. Les experts ont reçu
+copie de l’avis définitif de l’organisme d’avis le 17 avril 2024.
+
+Cet avis mentionne une série de problèmes qualifiés de « non-bloquants »
+pouvant être neutralisés par l’adaptation des procédures ou des interventions
+manuelles le jour de l’élection.
+
+Ce rapport mettait également l'accent sur l’activation de la carte à puce qui
+donne accès aux différents types d'élections. Le risque a été soulevé que le
+président donne une carte à puce pour le type d'électeur "Belge" à un électeur
+étranger, ce qui lui donnerait également un accès injustifié aux élections de la
+province. PwC a souligné l'importance de prévoir des contrôles et des mesures
+compensatoires suffisants afin que les membres des bureaux de vote sachent
+clairement pour quel type d'électeur la carte à puce devait être activée dans
+ces cas-là.
+
+3.1.1.2 Création de l'environnement de préparation ECM
+
+Comme évoqué plus haut, l’environnement SmartMatic comporte un
+environnement de préparation de la clé USB de base dont des copies seront
+utilisées dans tous les bureaux de vote concernés le jour des élections. Cet
+environnement de préparation comporte deux serveurs et un PC client
+raccordés sur un réseau isolé.
+
+L’image disque « ECM » générée lors la compilation sert à installer et configurer
+ce PC et ces deux serveurs.
+
+Le 23 avril 2024, dans les locaux du SPF Intérieur, cet environnement de
+préparation de la clé USB de base, appelée « clé master », a été installé et
+démarré par les représentants du SPF Intérieur en présence de membres du
+Collège et de représentants de la société SmartMatic.
+
+Pour les élections d’octobre 2024, aucun expert n’a participé à la séance de
+génération des différents éléments cryptographiques nécessaires aux
+élections.
+
+3.1.1.3 Génération des impressions d’écrans
+
+À la suite de la clôture des candidatures enregistrées au moyen de MARTINE,
+les jeux de données contenant les listes électorales et les listes de candidats
+ont été chargés dans l’environnement de préparation (« ECM »).
+
+À partir de cet environnement, est alors générée une clé USB particulière qui
+est utilisée sur une machine à voter pour générer des captures d’écrans des
+listes et candidats. Ces captures d’écrans sont ensuite soumises à l’approbation
+des présidents des bureaux principaux.
+
+3.1.1.4 Génération de la « clé master » pour les élections
+
+Le Collège n’a pas reçu d’information, quant à « master key » qui a été générée,
+ni concernant les feuilles avec les mots de passe des différents bureaux.
+
+3.1.1.5 Confection des supports mémoire
+
+Le Collège n’a pas reçu d’information à ce sujet tant au niveau de la création
+de support qu’à leur duplication.
+
+3.1.2 Contrôle du système PATSY
+
+Les analyses réalisées au mois de juin concernant le logiciel, qui n'a pas subi
+de modifications depuis, restent pleinement applicables pour les élections
+d’octobre 2024.
+
+3.1.2.0 Rapport de l’organisme d’avis
+
+La société PwC a été mandatée pour la vérification de l’adéquation des
+applications du système PATSY (convention PwC-Civadis du 26 mars 2024).
+
+À l’occasion d’une réunion organisée le 2 mai 2024, l’organisme d’avis PWC a
+présenté un rapport de son analyse du système de vote PATSY.
+
+L'analyse s’est focalisée sur l'application de préparation et de configuration du
+système d'aide au dépouillement, soit le système de préparation « PATSY_GEN
+», l'application de dépouillement numérique des bulletins papier, soit le système
+d'aide au dépouillement « PATSY_PC », et l'application de génération du code
+unique requis pour réaliser des fonctionnalités spécifiques sur le système d'aide
+au comptage, à savoir l'application « PATSY_HD (Helpdesk) ».
+
+Les experts ont reçu une copie de l'avis de l'organisme d’avis PWC le 2 mai
+2024.
+
+Cet avis mentionne une série de problèmes qualifiés de « non-bloquants »
+pouvant être neutralisés par l’adaptation des procédures ou par des
+interventions manuelles le jour de l’élection.
+
+3.1.2.1 Test de bureaux de dépouillement PATSY
+
+Le Collège a procédé à plusieurs tests du système PATSY sur du matériel prêté
+par la société Civadis. Ces tests ont été effectués d’une part avec les clés USB
+de démonstration et, d’autre part, avec des clés USB « master » identiques à
+celles utilisées le jour des élections.
+
+Le SPW a réalisé d’autres tests en septembre 2024 sur du matériel prêté par la
+société Civadis. Ces tests ont été effectués d’une part avec les clés USB de
+démonstration et, d’autre part, avec des clés USB « master » identiques à celles
+utilisées le jour des élections. La validité de ces tests ont été examinés par un
+expert Wallon du Collège.
+
+3.1.3 Contrôle du système MARTINE – module MA2X
+
+« Les analyses réalisées au mois de juin concernant le logiciel, qui n'a pas subi
+de modifications depuis, restent pleinement applicables pour les élections
+d’octobre 2024. »
+
+La société PwC s'est vu confier la vérification de l'adéquation du système
+MARTINE (accord PwC-Civadis du 6 novembre 2023). L'analyse inclut le
+module MA2X ainsi que les interfaces entre l'application MA2X et le système
+de vote électronique et l'interface entre l'application MA2X et l'application
+bureau de dépouillement électronique.
+
+L'analyse a porté sur (1) la sécurité, l'intégrité, la fraude et le secret du vote, (2)
+le respect de la législation, (3) la fonctionnalité et la robustesse des systèmes,
+(4) la mise en place d'un système garantissant des résultats cohérents.
+
+Le 16 mai 2024, le Collège a assisté à la présentation du rapport de PwC sur
+son évaluation de MA2X (module de traitement des résultats de MARTINE).
+
+PwC a émis l’avis suivant: « Sur la base des activités que nous avons exécutées
+et pour autant que les instructions d’exploitation (additionnelles) nécessaires
+et/ou les procédures manuelles soient mises en place et exécutées, et en
+référence à la définition de l’adéquation mentionnée ci-dessus, nous arrivons à
+la conclusion, avec une certitude raisonnable - mais non absolue - que
+l’Application de “gestion des résultats” (MA2X) répond aux critères
+d’adéquation définis ci-dessus. En plus, nous attirons l'attention sur la nécessité
+de valider manuellement la répartition des sièges du Parlement wallon avec
+apparentement dans des cas exceptionnels. »
+
+3.1.4 Analyse des codes sources
+
+Étant donné que le logiciel était en grande partie le même que celui des
+élections précédentes, le Collège n'a pas vérifié le code source.
+
+3.1.5 Analyse du Centre for Cybersecurity Belgium (CCB)
+
+3.1.5.0 Périmètre et méthodologie
+
+L'approche du CCB s'est concentrée sur plusieurs éléments :
+- La gestion de la sécurité au niveau processus ;
+- La sécurité du cycle de développement ;
+- Des recommandations et le suivi de celles-ci ;
+- Un exercice de pénétration du système de vote (pentesting).
+
+En pratique, ces analyses ont été menées sous forme d'interview, en interaction
+constante avec les sociétés chargées de développer le système de vote
+(Civadis et SmartMatic), et/ou en parallèle, de manière indépendante. La
+collaboration entre les sociétés est également évaluée. Par ailleurs, le CCB a
+aidé à la mise en place d'un DRP (disaster recovery plan) et de procédures
+formelles pour les incidents envisagés.
+
+3.1.5.1 Sécurité en ligne et lutte contre la désinformation
+
+Le CCB, en collaboration avec la Sûreté de l'État (VSSE) et le Service Général
+du Renseignement et de la Sécurité (SGRS), a élaboré le guide « En ligne en
+toute sécurité pendant la campagne électorale » à l'intention des partis
+politiques et de leurs candidats. Ce guide contient des recommandations visant
+à élever le niveau de cybersécurité, à atténuer les risques de cybersécurité et
+à réduire les vulnérabilités numériques.
+
+3.1.5.2 Test de sécurité sur l'infrastructure
+
+Les tests de sécurité ont été effectués par la société Deloitte. En 2019, Deloitte
+avait déjà réalisé l’audit de sécurité pour le compte du CCB. Il a été établi avec
+le CCB un programme annuel de tests de sécurité pris en charge par Deloitte.
+Deloitte réalise des tests de sécurité une fois par an sur l’ensemble des
+applications liées aux élections. L’application MARTINE est contrôlée deux fois
+par an. L’analyse comprend l’identification des vulnérabilités et la mise à jour
+de l’environnement.
+
+Après les tests/analyses, les conclusions sont présentées au fournisseur et les
+risques sont neutralisés ou atténués.
+
+3.1.6 Participation aux séances de formation
+
+3.1.6.0 Formations des formateurs
+
+Pour accompagner les communes dans la formation de leurs présidents de
+bureau de vote et de dépouillement, le SPW élaboré des documents qui sont
+mis à disposition de l'ensemble de la population pour expliquer et simplifier le
+travail de tous les présidents de bureau de vote et de dépouillement. Le
+ministère de la Communauté germanophone a mis à la disposition ces
+documents en allemand ainsi que des vidéos pour expliquer la procédure du
+scrutin sur leur page web.
+
+3.1.6.1 Formations des présidents de bureaux de vote
+
+Les membres du Collège ont assisté à une présentation et ont pu consulter les
+documents fournis par le SPW.
+
+Globalement, le Collège a constaté que la qualité des formations variait.
+Quelques remarques s’imposent :
+- Aucune démonstration/formation pratique n'a été dispensée pour certain
+présidents de bureaux wallons.
+- La fermeture d'un bureau de dépouillement PATSY, n'a pas toujours été
+expliquée. En conséquence, les experts ont reçu beaucoup de questions
+à ce sujet lors de leur passage.
+
+3.2 Constatations le jour des élections
+
+Le jour du scrutin, les membres du Collège ont procédé à des contrôles dans
+les bureaux de vote SmartMatic, de totalisation et dans des bureaux de
+dépouillement utilisant le système PATSY.
+
+3.2.1 Contrôles dans les bureaux de vote SmartMatic
+
+Les experts ont effectué des contrôles dans un certain nombre de bureaux de
+vote électronique. Les contrôles ont été principalement de trois types : émission
+de votes de tests pour analyse ultérieure, réponse à un questionnaire-type et
+l’observation du déroulement des opérations.
+
+3.2.1.0 Votes de test
+Des votes de test ont été émis par les experts du Collège, souvent en présence
+d'un assesseur désigné par le président du bureau de vote. Les votes émis ont
+été contrôlés dans l'isoloir prévu pour la visualisation du vote conjointement par
+l'assesseur et l'expert. Tous les votes ont été fidèlement reproduits à l'écran.
+Les bulletins ont ensuite été emportés par l'expert.
+
+3.2.1.1 Questionnaire
+
+Un rapport basé sur un questionnaire-type a ensuite été établi par l’expert avec
+la collaboration du président du bureau de vote. Les incidents éventuels y ont
+été consignés. Ce rapport a été établi afin de pouvoir identifier les difficultés
+rencontrées et de proposer des recommandations en conséquence.
+
+3.2.1.2 Bureaux de vote SmartMatic contrôlés
+
+Les bureaux de vote SmartMatic qui ont été contrôlés sont repris dans le
+tableau ci-dessous.
+Canton Commune Bureau
+Eupen Eupen 1
+Eupen Kelmis 15, 20
+Eupen Lontzen 23
+Eupen Raeren 27, 30
+Sankt-Vith Amel 12, 14
+Sankt-Vith Büllingen 16, 18
+Sankt-Vith Burg-Reuland 21
+Sankt-Vith Bütgenbach 23
+Sankt-Vith St. Vith 2, 4, 6
+
+3.2.2 Incidents dans les bureaux de vote SmartMatic
+
+Certains problèmes ont été rencontrés dans les bureaux de vote visités. Ces
+listes de problèmes ne constituent pas une indication du nombre de problèmes
+survenus le jour du scrutin.
+
+3.2.2.0 Problèmes techniques
+
+Liste non-exhaustive de problèmes techniques rencontrés dans certains
+bureaux contrôlés :
+- Panne de machine de vote ;
+- Problème de lecture des preuves papier par l’urne.
+
+3.2.2.1 Autres problèmes
+
+- Des problèmes d'encodage des logins sont survenus en raison du fait
+que le caractère "ü", qui n'existe pas dans l'alphabet français, a été mal
+pris en charge par le système. Ces problèmes d'encodage se produisent
+parce que certaines communes germanophones utilisent des caractères
+spéciaux comme le "ü", qui ne font pas partie de l'alphabet français, mais
+sont couramment employés dans les logins ;
+- Il est également à noter que les majuscules ne sont pas prises en compte
+dans l'encodage actuel, ce qui complique davantage la gestion correcte
+des logins ;
+- Le rapport des chiffres-clés a produit un document avec une date
+incorrecte.
+
+3.2.3 Contrôles dans les bureaux de dépouillement PATSY
+
+Le jour du scrutin, les membres du Collège se sont rendus aux bureaux de
+dépouillement suivants :
+- Vresse-sur-Semois
+- Gedinne
+- Bièvre
+- Beauraing
+- Hastière
+- Dinant
+- Yvoir
+- Fosse la ville
+
+29 formulaires ont été remplis par les présidents de bureau.
+
+3.2.3.0 Procédures
+
+- Vresse-sur-Semois : lors de l’arrivée de l’expert une urne et les
+enveloppes électorales étaient entreposées sur le siège passager d’une
+voiture stationnée sur la voie publique. Cette situation pose de sérieux
+problèmes de sécurité, notamment sur le plan informatique. Le fait que
+des supports physiques et numériques, contenant potentiellement des
+données sensibles ou liées aux résultats électoraux, soient laissés sans
+surveillance dans un espace non sécurisé augmente les risques de
+manipulation, de vol ou d’altération ;
+
+- Beauraing : les enveloppes contenant les clés USB nécessaires aux
+opérations électorales ont été remises aux présidents de bureau dès le
+vendredi matin, les plaçant ainsi en possession de ces supports deux
+jours avant les élections. Cette pratique présente un risque informatique
+important, car elle allonge considérablement la période durant laquelle
+les clés USB, qui contiennent des données sensibles, peuvent être
+compromises ;
+
+- Dinant : en raison d'un problème d'encodage des votes blancs et nuls,
+l'un des bureaux de dépouillement a dû faire appel à la société Civadis
+pour obtenir de l'aide dans la procédure de correction. En effet, les
+indications concernant la gestion de ces cas spécifiques étaient
+insuffisantes, rendant nécessaire une assistance externe afin de
+résoudre la situation de manière correcte et conforme ;
+
+- Il a été constaté que la procédure concernant la taille des piles de votes
+à comptabiliser n'était pas respectée, entraînant des blocages.
+
+3.2.3.1 Problèmes Techniques
+
+- Yvoir : une coupure de courant a contraint l'équipe à recourir aux clés
+USB de secours afin d'assurer le bon déroulement des opérations
+électorales. Il serait intéressant d'envisager la mise à disposition
+d'onduleurs (batteries) dans les lieux à risque afin de mieux prévenir ce
+type de situation à l'avenir et d'assurer une continuité sans faille des
+opérations, même en cas de coupure de courant.
+- Vresse-sur-Semois et Gedinne avaient pris les précautions nécessaires
+en prévoyant l'activation d'un générateur de secours le jour des
+élections, en raison d'un problème d'approvisionnement en électricité.
+Cependant, le recours à ce générateur n'a finalement pas été
+nécessaire.
+
+3.2.4 Contrôles dans les bureaux principaux
+
+Les membres du Collège se sont rendus dans les bureaux principaux ou
+bureaux communaux suivants le soir des élections :
+- Dinant
+- Yvoir
+- Raeren
+- St. Vith
+
+À Dinant, Yvoir et Raeren les opérations se sont déroulées sans le moindre
+incident, assurant le bon déroulement des élections.
+
+À St Vith, des ralentissements ont été constatés lors de la première introduction
+des clés USB.
+
+De plus, il a été observé que le matériel informatique nécessaire à la totalisation
+n'a pas été fourni, ce qui soulève des préoccupations en matière de sécurité.
+L'absence d’uniformité de ce matériel critique pourrait en effet compromettre
+l'intégrité et la fiabilité des résultats électoraux.
+
+Les experts ont constaté que le PC demande systématiquement s'ils souhaitent
+formater la clé USB à chaque insertion de celle-ci. Cette demande répétée de
+formatage des clés USB à chaque insertion pose un sérieux problème de
+sécurité. En effet, si un utilisateur accepte par inadvertance de formater la clé,
+toutes les données critiques stockées dessus pourraient être effacées.
+
+3.3 Contrôles effectués après le jour des élections
+
+Comme à l’occasion des élections de juin 2024, le Collège a de nouveau
+souhaité procéder à une retotalisation des votes de la Communauté
+germanophone contenus dans les supports mémoires utilisés dans les 57
+bureaux de vote.
+
+L’objectif était de comparer les résultats obtenus par le Collège au moyen de
+ses propres logiciels avec les données diffusées par MARTINE aux médias le
+soir des élections et également utilisées pour diffuser les résultats sur le site
+web officiel des élections https://ergebnisse.gemeindewahlen.be/ .
+
+3.3.1 Récupération des clés USB
+
+Afin de procéder à la retotalisation, le Collège devait récupérer les clés USB
+utilisées le jour des élections. Malheureusement, aucune centralisation des clés
+USB n'était prévue. Les experts ont récupéré l'une des deux clés USB par
+bureau à la Justice de paix du premier canton d’Eupen et de St. Vith.
+
+3.3.2 Lecture des clés USB
+
+Le Collège a mis en place un environnement informatique spécifique (système
+d'exploitation, logiciel) pour effectuer des copies des supports de mémoire
+utilisés dans les bureaux de vote, en vue de leur analyse et exploitation.
+
+Grâce à cet environnement, le Collège a réalisé des copies des clés USB
+utilisées dans les bureaux principaux pour la totalisation des résultats des
+cantons d’Eupen et de Saint-Vith.
+
+3.3.3 Vérification et décryptage des clés USB
+
+L’environnement de copie des supports a permis de réaliser automatiquement
+divers contrôles :
+- Comparaison des systèmes d’exploitation, logiciels exécutables et jeux
+de données (communes, listes, candidats, etc.) avec ceux d’une clé USB
+de référence ;
+- Vérification et décryptage des fichiers .vt des clés.
+
+Le Collège n’a constaté aucune anomalie sur les clés lisibles récupérées et a
+confirmé leur authenticité. Les procédures en place, ainsi que les sécurités
+cryptographiques, permettent de conclure qu'il s'agit bien des clés USB
+authentiques utilisées dans les différents bureaux de vote lors des élections.
+
+À l'aide d'un outil logiciel fourni par SmartMatic (dont le code source est
+disponible) et des différents mots de passe communiqués par le Ministère de
+la Communauté germanophone, le Collège a procédé au décryptage de tous
+les fichiers .vt en sa possession.
+
+Le Collège a ainsi pu obtenir, pour chaque bureau de vote, les fichiers .vt
+décryptés.
+
+Étant donné les systèmes cryptographiques et de signature numérique en
+vigueur dans le système, ainsi que le décryptage réussi de tous les fichiers .vt,
+le Collège confirme l’authenticité des votes enregistrés sur les clés USB.
+
+3.3.4 Retotalisation des clés USB par commune
+
+Une fois les fichiers .vt décryptés, à l’aide de son propre logiciel, le Collège a
+procédé à la retotalisation de tous les fichiers pour chaque bureau de vote de
+la Communauté germanophone. Le résultat de la retotalisation des votes par
+bureau de vote a été comparé aux nombres de votes totaux figurant dans le
+rapport.
+
+3.3.5 Vérification de la retotalisation
+
+Sur la base des totaux ainsi obtenus, le Collège a effectué une comparaison
+des résultats par commune, tant au niveau du chiffre électoral de chaque liste
+que des voix de préférence de chaque candidat et des votes en tête de liste. Il
+n’a relevé aucune discordance lors de ces contrôles entre ses retotalisations et
+les données diffusées par le système MARTINE.
+
+4 Diffusion du code source
+
+4.1 Code source des logiciels SmartMatic
+
+Le Collège a pu constater que le code source avait été publié sur le site du SPF
+Intérieur, comme prévu par la législation.
+
+Après les élections de juin 2024, le Collège a comparé ces sources avec celles
+reçues de SmartMatic lors de la compilation de référence pour produire les
+exécutables utilisés le jour des élections. Le code source publié est identique à
+celui obtenu de SmartMatic à la compilation de référence.
+
+4.2 Code source du système MARTINE
+
+La loi ne prévoit pas la publication du code source du système MARTINE.
+
+4.3 Code source du système PATSY
+
+La loi ne prévoit pas la publication du code source du système PATSY.
+
+5 Réactions aux recommandations 2019
+
+Le SPF Intérieur a rédigé le 31 octobre 2023 des réactions aux
+recommandations du Collège dans le cadre des élections du 26 mai 2019. Le
+Collège, dans son rôle de contrôle des procédures et des modifications
+apportées pour les élections 2024, veut revenir sur certaines
+recommandations.
+
+...
+
+6 Recommandations
+
+6.1 Recommandations juin 2024
+
+Le Collège constate que le SPW n'a pas eu le temps de prendre en compte les
+recommandations formulées en juin dans le rapport du Collège d'experts
+chargés du contrôle des systèmes électroniques de vote, de dépouillement et
+de collecte des résultats. Ces recommandations, issues des élections
+simultanées du 9 juin 2024 pour le Parlement européen, la Chambre des
+représentants, et les Parlements de régions et communautés, n'ont pas pu être
+intégrées en vue des élections communales et provinciales du 13 octobre 2024,
+en raison de contraintes de temps. Le Collège recommande de prendre en
+compte ces recommandations lors des prochaines élections afin d'améliorer le
+processus électoral en se basant sur les enseignements tirés des scrutins
+précédents.
+
+6.2 Recommandations octobre 2024
+
+6.2.1 Renforcer la sécurité des données sensibles
+
+- Éviter tout stockage non sécurisé des urnes et des enveloppes
+électorales sur la voie publique. Prévoir des procédures plus strictes de
+manipulation et de conservation des supports contenant des données
+électorales.
+
+- Réduire le temps de possession des clés USB contenant des
+informations électorales avant le scrutin. Elles ne devraient être remises
+aux présidents de bureau qu'au moment le plus proche du
+dépouillement pour minimiser les risques d'altération ou de
+manipulation.
+
+6.2.2 Précautions en cas de coupures de courant
+
+- Fournir des solutions alternatives d'alimentation comme des onduleurs
+(batteries) dans les lieux à risque. Assurer que chaque bureau de vote
+considéré comme à risque d’ un point de vue électrique dispose de
+générateurs de secours prêts à être utilisés.
+
+6.2.3 Amélioration des formations et des procédures PATSY
+
+- Organiser des formations plus complètes et homogènes pour les
+présidents de bureaux de vote, incluant des démonstrations pratiques
+sur la fermeture des bureaux de dépouillement et l’utilisation des
+systèmes PATSY.
+En Wallonie, des présidents ont évoqué le manque de formation et n’ont
+reçu que la documentation.
+
+- Insister sur la taille des piles lors de l’encodage dans PATSY
+conformément aux procédures établies pour éviter les erreurs
+d’encodage et les blocages des systèmes (observations faites dans
+plusieurs bureaux).
+
+- Amélioration des formations sur la procédure à suivre en cas d'utilisation
+des clés USB de secours.
+
+6.2.4 Surveillance des infrastructures techniques
+
+- Assurer des tests fréquents des infrastructures techniques (serveurs,
+lignes de communication, etc.) avant et après les jours des élections
+pour garantir que les redondances prévues fonctionnent correctement.
+Un suivi régulier des tests de sécurité menés ainsi que des rapports sont
+essentiel pour prévenir les vulnérabilités.
+
+7 Conclusion
+
+Pour les communes et les cantons faisant usage du vote électronique contrôlés
+par le Collège lors des élections communales, aucune différence n’a été
+détectée entre les résultats communiqués aux médias par le système MARTINE
+et publiés sur le site officiel des élections. Le Collège en conclut par conséquent
+que les systèmes ont correctement récolté, totalisé les voix pour ces cantons
+et communes. Le matériel et logiciel utilisés ont fonctionné conformément aux
+spécifications.
+
+Les systèmes SmartMatic, PATSY et MARTINE ont montré une performance
+globalement satisfaisante lors des élections précédentes, et les analyses
+techniques confirment que les risques potentiels ont été bien gérés, malgré
+quelques incidents mineurs. Les tests de sécurité et l'absence de modifications
+majeures dans les logiciels depuis les élections de juin 2024, assurent une
+continuité fonctionnelle. Le Collège constate aussi que certaines des
+améliorations tant coté procédure qu'organisationnel ont été intégrées.
+
+Cependant, des améliorations en termes de sécurité des supports physiques,
+de formation des équipes et de gestion des incidents techniques sont à
+envisager pour garantir l’intégrité et la fluidité des opérations lors des futures
+élections.
+
+Le Collège remercie tous les intervenants avec lesquels il a travaillé pendant sa
+mission de contrôle pour leur coopération : la Cellule Élections du SPW, la
+Cellule Élections du ministère de la Communauté germanophone, les
+représentants des firmes, les membres des bureaux de vote, de
+comptabilisation, des bureaux principaux, ainsi que le personnel des
+communes.
+
+8 Schlussfolgerung
+
+Für die Gemeinden und Kantone, die von der elektronischen Stimmabgabe
+Gebrauch machen und die das Kollegium vollständig für die Gemeindewahlen
+überprüft hat, konnte das Kollegium keinen Unterschied feststellen zwischen
+den Ergebnissen, die den Medien durch das System MARTINE mitgeteilt und
+auf der offiziellen Website der Wahlen veröffentlicht wurden. Das Kollegium
+kommt daher zu dem Schluss, dass die Systeme die Stimmen für diese Kantone
+und Gemeinden korrekt gesammelt und zusammengezählt haben und die
+verwendete Hard- und Software gemäß den Spezifikationen funktioniert.
+
+Die Systeme SmartMatic, PATSY und MARTINE zeigten bei den vergangenen
+Wahlen eine insgesamt zufriedenstellende Leistung, und die technischen
+Analysen bestätigen, dass die potenziellen Risiken trotz einiger kleinerer
+Zwischenfälle gut gehandhabt wurden. Die Sicherheitstests und die Tatsache,
+dass seit den Wahlen im Juni 2024 keine größeren Änderungen an der
+Software durchgeführt wurden, gewährleisten eine funktionale Kontinuität. Das
+Sachverständigenkollegium stellt auch fest, dass bereits leichte
+Verbesserungen sowohl auf Verfahrens- als auch auf Organisationsebene
+vorgenommen wurden. Dennoch sollten zusätzlich Verbesserungen in Bezug
+auf die Sicherheit der physischen Datenträger, die Schulung der
+Wahlvorstände und das Vorgehen bei technischen Vorfällen in Betracht
+gezogen werden, um die Integrität und den reibungslosen Ablauf der Vorgänge
+bei künftigen Wahlen zu gewährleisten.
+
+Das Kollegium dankt allen Beteiligten, mit denen es während seines
+Kontrollauftrags zusammengearbeitet hat, für ihre Zusammenarbeit: der für die
+Wahlen zuständigen Abteilungen des SPW und des Ministeriums der
+Deutschsprachigen Gemeinschaft, den Vertretern der Firmen, den Mitgliedern
+der Wahllokale, der Auszählungsbüros, der Kantonsbüros und der
+Gemeindevorstände sowie dem Personal der Gemeinden.
+
+Namur, le 23 octobre 2024.
+
+Pour le Collège
+
+De Schryver Christophe
+
+Parlement de Wallonie
+
+Brandt Daniel
+Ostlender Susi
+
+Parlement de la Communauté
+germanophone
